@@ -53,3 +53,10 @@ double CPU_time_taken(clock_t begin){
 int min(int x, int y){
     return (x < y) ? x: y;
 }
+
+void exchange(int* array, int x, int y){
+    int temp = array[x];
+    array[x] = array[y];
+    array[y] = temp;
+}
+

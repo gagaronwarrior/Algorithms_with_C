@@ -212,6 +212,29 @@ int main(){
     quick_sort_3_way(array, N);
     ShowArray(array, N, "3_WAY_QUICK_SORT"); 
 
+    /********************************************************
+     * MAX_PRIORITY_QUEUE test client.
+     *******************************************************/
+    MaxPQ pq;
+    MaxPQ_init(&pq);
+    for (int i = 1; i <= 6; i++){
+        MaxPQ_insert(&pq, i);
+    }
+    MaxPQ_show(&pq);
+    printf("MaxPQ : isEmpty %d\n", MaxPQ_isEmpty(&pq));
+    printf("MaxPQ : size %d\n", MaxPQ_size(&pq));
+    printf("MaxPQ : max %d\n", MaxPQ_max(&pq));
+    printf("MaxPQ : deleteMax %d\n", MaxPQ_deleteMax(&pq));
+    MaxPQ_show(&pq);
+    printf("MaxPQ : isEmpty %d\n", MaxPQ_isEmpty(&pq));
+    printf("MaxPQ : size %d\n", MaxPQ_size(&pq));
+    printf("MaxPQ : max %d\n", MaxPQ_max(&pq));
+    printf("MaxPQ : capacity %d\n", pq.capacity);
+    while (!MaxPQ_isEmpty(&pq)){
+    printf("MaxPQ : deleteMax %d\n", MaxPQ_deleteMax(&pq));
+    }
+    MaxPQ_deleteMax(&pq);
+    MaxPQ_destroy(&pq);
 
     printf("Time taken : %g\n", CPU_time_taken(clock_begin));
 

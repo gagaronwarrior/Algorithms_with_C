@@ -5,6 +5,8 @@
 all:
 	cd src/ && $(MAKE) all
 		
+valgrind:
+	cd src/ && $(MAKE) valgrind
 .PHONY: clean
 
 clean:

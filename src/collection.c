@@ -518,4 +518,91 @@ void Dequeue_destroy(Dequeue* dq){
     DoublyList_destroy(dq);
 }
 
+/****************************************************************
+* PRIORITY QUEUE MAX : private implementation.
+****************************************************************/
+void _resizePQ(MaxPQ* pq, int size){
+    int* temp = Malloc(sizeof(int) * size);
+    for (int i = 1; i <= pq->size; i++){
+        temp[i] = pq->array[i];
+    }
+    Free(pq->array);
+    pq->array = temp;
+    pq->capacity = size;
+}  
 
+void _PQ_swim(MaxPQ* pq, int index){
+    while (index > 1 && (pq->array[index/2] < pq->array[index])){
+        exchange(pq->array, index/2, index);
+        index = index/2;
+    }
+}
+
+void _PQ_sink(MaxPQ* pq, int index){
+    int size = MaxPQ_size(pq);
+    while (2*index <= size){
+        int temp = 2*index;
+        if (temp < size && (pq->array[temp] < pq->array[temp+1])){
+            temp++;
+        }
+        if (pq->array[temp] < pq->array[index]) break;
+        exchange(pq->array, index, temp);
+        index = temp;
+    }
+}
+
+void MaxPQ_init( MaxPQ* pq){
+    pq->array = (int* )Malloc(sizeof(int)*2);
+    pq->size = 0;
+    pq->capacity = 2;
+}
+
+void MaxPQ_insert(MaxPQ* pq, int key){
+    if (pq->capacity-1 == pq->size){
+        _resizePQ(pq, 2*pq->capacity);
+    }
+    pq->array[++pq->size] = key;
+    _PQ_swim(pq, pq->size);
+}
+
+int MaxPQ_deleteMax(MaxPQ* pq){
+    if (pq->size == 0){
+        printf("MaxPQ : deleteMax, underflow\n");
+        MaxPQ_destroy(pq);
+        exit(EXIT_FAILURE);
+    }
+    int item = pq->array[1];
+    exchange(pq->array, 1, pq->size);
+    pq->size -= 1;
+    _PQ_sink(pq, 1);
+    if (pq->size <= (pq->capacity/4)-1){
+        _resizePQ(pq, pq->capacity/2); 
+    }
+    return item;
+}
+
+int MaxPQ_max(MaxPQ* pq){
+    return pq->array[1];
+}
+
+bool MaxPQ_isEmpty(MaxPQ* pq){
+    return (pq->size == 0);
+}
+
+int MaxPQ_size(MaxPQ* pq){
+    return pq->size;
+}
+
+void MaxPQ_show(MaxPQ* pq){
+    printf("MaxPQ: {");
+    for (int i = 1; i <= pq->size; i++){
+        printf(" %d,", pq->array[i]);
+    }
+    printf("}\n");
+}
+
+void MaxPQ_destroy(MaxPQ* pq){
+    Free(pq->array);
+    pq->size = 0;
+    pq->capacity = 0;
+}

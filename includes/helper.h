@@ -15,4 +15,5 @@ int Random_integer(int low, int high);
 void Shuffle_array(int* array, int length);
 double CPU_time_taken(clock_t start_time);
 int min(int x, int y);
+void exchange(int* array, int x, int y);
 #endif

@@ -133,6 +133,23 @@ bool Dequeue_isEmpty(Dequeue* dq);
 void Dequeue_show(Dequeue* dq);
 void Dequeue_destroy(Dequeue* dq);
 
+/**************************************************************
+* PUBLIC : MAX_PRIORITY_QUEUE.
+**************************************************************/
+typedef struct _Priority_queue{
+    int* array;
+    int size;
+    int capacity;
+}MaxPQ;
+
+void MaxPQ_init(MaxPQ* pq);
+void MaxPQ_insert(MaxPQ* pq, int key);
+int MaxPQ_deleteMax(MaxPQ* pq);
+int MaxPQ_max(MaxPQ* pq);
+bool MaxPQ_isEmpty(MaxPQ* pq);
+int MaxPQ_size(MaxPQ* pq);
+void MaxPQ_show(MaxPQ* pq);
+void MaxPQ_destroy(MaxPQ* pq);
 
 
 #endif

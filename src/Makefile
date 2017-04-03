@@ -22,10 +22,15 @@ all:$(LIBRARY) $(BINARY)
 	mv *.o $(OBJSDIR)
 	mv $(LIBRARY) $(LIBSDIR)
 	mv $(BINARY) $(BINDIR)
-	@echo "--------------------------------------------------------------"
+
+valgrind:
+	@echo "--------------------------------------------------------------------------------"
 	@echo "Executing the test client to check memory leak"
-	@echo "---------------------------------------------------------------"
+	@echo "--------------------------------------------------------------------------------"
+	@echo "If ERROR is seen, main program has made force EXIT due to error condition"
+	@echo "--------------------------------------------------------------------------------"
 	valgrind ./../bin/main
+	@echo "--------------------------------------------------------------------------------"
 
 $(BINARY):$(OBJ)
 	@echo "Creating binary for test client"

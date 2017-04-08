@@ -25,6 +25,7 @@ Please let me know if your testing breaks the implementation.
 
 From the poject top directory, run:
 make clean.
+make install
 make all.
 
 The output of the make all, creates the executable bin/main , library lib/lib_gagaron.a.

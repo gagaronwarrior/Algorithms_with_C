@@ -23,6 +23,13 @@ all:$(LIBRARY) $(BINARY)
 	mv $(LIBRARY) $(LIBSDIR)
 	mv $(BINARY) $(BINDIR)
 
+install:
+	@echo " creating directory lib/ obj/ and /bin"
+	mkdir ../lib
+	mkdir ../obj
+	mkdir ../bin
+	@echo "make install done."
+  
 valgrind:
 	@echo "--------------------------------------------------------------------------------"
 	@echo "Executing the test client to check memory leak"

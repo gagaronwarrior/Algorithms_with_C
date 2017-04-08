@@ -151,5 +151,4 @@ int MaxPQ_size(MaxPQ* pq);
 void MaxPQ_show(MaxPQ* pq);
 void MaxPQ_destroy(MaxPQ* pq);
 
-
 #endif

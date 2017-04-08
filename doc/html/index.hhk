@@ -1,0 +1,303 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML><HEAD></HEAD><BODY>
+<OBJECT type="text/site properties">
+<param name="FrameName" value="right">
+</OBJECT>
+<UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___bag.html"><param name="Name" value="_Bag"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___bag.html#ad43c3812e6d13e0518d9f8b8f463ffcf"><param name="Name" value="count"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___bag.html#aa3e81b47ac0637ebb1ea7cc12812405a"><param name="Name" value="head"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___doubly_list.html"><param name="Name" value="_DoublyList"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___doubly_list.html#ad43c3812e6d13e0518d9f8b8f463ffcf"><param name="Name" value="count"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___doubly_list.html#afc73d55e915fcb44835139f8d5da2142"><param name="Name" value="head"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___doubly_list.html#a3247912d441750d98d1548e4ce82f923"><param name="Name" value="tail"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___fix_stack.html"><param name="Name" value="_FixStack"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___fix_stack.html#acbddc7160280aea531941a9b78819567"><param name="Name" value="arr"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___fix_stack.html#adbe66a087ac3fd4a5b0566f64ca2d12b"><param name="Name" value="capacity"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___fix_stack.html#af93f4f37fc2ad9c37af4a715423b110c"><param name="Name" value="top"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___list.html"><param name="Name" value="_List"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___list.html#ad43c3812e6d13e0518d9f8b8f463ffcf"><param name="Name" value="count"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___list.html#aa3e81b47ac0637ebb1ea7cc12812405a"><param name="Name" value="head"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___node.html"><param name="Name" value="_Node"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___node.html#a9eab91667db4d35c7231dcddf7b89a76"><param name="Name" value="data"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___node.html#ac4f2601851f11490566c5225ef47f185"><param name="Name" value="next"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___priority__queue.html"><param name="Name" value="_Priority_queue"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___priority__queue.html#a0483d856b36b358ff3b62e6a3c6f95f1"><param name="Name" value="array"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___priority__queue.html#adbe66a087ac3fd4a5b0566f64ca2d12b"><param name="Name" value="capacity"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___priority__queue.html#a439227feff9d7f55384e8780cfc2eb82"><param name="Name" value="size"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___queue.html"><param name="Name" value="_Queue"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___queue.html#ad43c3812e6d13e0518d9f8b8f463ffcf"><param name="Name" value="count"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___queue.html#aa3e81b47ac0637ebb1ea7cc12812405a"><param name="Name" value="head"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___queue.html#a5536adfa9bc42404731e25b319dbf2b5"><param name="Name" value="tail"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___resize_stack.html"><param name="Name" value="_ResizeStack"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___resize_stack.html#acbddc7160280aea531941a9b78819567"><param name="Name" value="arr"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___resize_stack.html#adbe66a087ac3fd4a5b0566f64ca2d12b"><param name="Name" value="capacity"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___resize_stack.html#af93f4f37fc2ad9c37af4a715423b110c"><param name="Name" value="top"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___two_way_link_node.html"><param name="Name" value="_TwoWayLinkNode"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___two_way_link_node.html#a9eab91667db4d35c7231dcddf7b89a76"><param name="Name" value="data"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___two_way_link_node.html#abe7b1aed93a24ff85f067cbb311de7df"><param name="Name" value="next"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___two_way_link_node.html#afc8b989f23c32bacb08be6eb2bf95aab"><param name="Name" value="prev"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___fix_stack.html#acbddc7160280aea531941a9b78819567"><param name="Name" value="arr"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___fix_stack.html#acbddc7160280aea531941a9b78819567"><param name="Name" value="_FixStack"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___resize_stack.html#acbddc7160280aea531941a9b78819567"><param name="Name" value="_ResizeStack"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___priority__queue.html#a0483d856b36b358ff3b62e6a3c6f95f1"><param name="Name" value="array"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a96eaad8b37d9b6e19ddc373ec38c751e"><param name="Name" value="Bag"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a6873ebd198f60210fa9a826e8785d00a"><param name="Name" value="Bag_add"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a8d688413e88a03a6c15e294970923348"><param name="Name" value="Bag_count"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a5748685a7d10db530102ff7d1b9d4f98"><param name="Name" value="Bag_destroy"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a89c8b30b322a64ee084495a8957b2f7c"><param name="Name" value="Bag_init"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#ad58a6ccfc03aa2a7951080f890daf9c8"><param name="Name" value="Bag_isEmpty"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a013f0af6624036de5d07272f039d15d2"><param name="Name" value="Bag_show"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="sort_8h.html#a769a5a7f2d3c7c1ef819bfb080b06a54"><param name="Name" value="bottom_up_merge_sort"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___fix_stack.html#adbe66a087ac3fd4a5b0566f64ca2d12b"><param name="Name" value="capacity"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___fix_stack.html#adbe66a087ac3fd4a5b0566f64ca2d12b"><param name="Name" value="_FixStack"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___priority__queue.html#adbe66a087ac3fd4a5b0566f64ca2d12b"><param name="Name" value="_Priority_queue"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___resize_stack.html#adbe66a087ac3fd4a5b0566f64ca2d12b"><param name="Name" value="_ResizeStack"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html"><param name="Name" value="collection.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a96eaad8b37d9b6e19ddc373ec38c751e"><param name="Name" value="Bag"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a6873ebd198f60210fa9a826e8785d00a"><param name="Name" value="Bag_add"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a8d688413e88a03a6c15e294970923348"><param name="Name" value="Bag_count"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a5748685a7d10db530102ff7d1b9d4f98"><param name="Name" value="Bag_destroy"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a89c8b30b322a64ee084495a8957b2f7c"><param name="Name" value="Bag_init"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#ad58a6ccfc03aa2a7951080f890daf9c8"><param name="Name" value="Bag_isEmpty"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a013f0af6624036de5d07272f039d15d2"><param name="Name" value="Bag_show"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a6c76a65bc7aa6e0240c9a10115dec7fa"><param name="Name" value="Dequeue"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a7d2a759a1534f1dbd1d393ea41bf0ed2"><param name="Name" value="Dequeue_destroy"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#afbc0b980e78b5908b07369596ab294c7"><param name="Name" value="Dequeue_init"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a0ce112213904a59490569be37f7ab10a"><param name="Name" value="Dequeue_isEmpty"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a49c0673e09f388e0513b95ee95d6d3d3"><param name="Name" value="Dequeue_popBack"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a527f0909088ddf5b55b68e1c80298357"><param name="Name" value="Dequeue_popFront"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#afd685dae23ad5683b80e703847d4bb45"><param name="Name" value="Dequeue_pushBack"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a401663c2d96ca21b920d7f94189d83aa"><param name="Name" value="Dequeue_pushFront"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a52f2d327f89f1dfaa7adeb07d6d17e09"><param name="Name" value="Dequeue_show"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a7689c314cdbb6a3c38123833c2df451c"><param name="Name" value="Dequeue_size"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#ad512f51857bbc0257a0a649f463ef8f3"><param name="Name" value="DNode"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a9a083c43e96b568110c57f487368fd14"><param name="Name" value="DoublyList"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a734bb656bf2aedac9a53b7e08818fa9c"><param name="Name" value="DoublyList_delete"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a0d741bd3f44b2b9e325d819f2d884fab"><param name="Name" value="DoublyList_destroy"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#aafbb037248ad3956481b7ebf88e4d189"><param name="Name" value="DoublyList_getNode"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a34e56bccacd8de169a9a2c48dacd1288"><param name="Name" value="DoublyList_init"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a6364cad898a586c0415e4e6faee0bc9f"><param name="Name" value="DoublyList_insert"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a667af57ad91e7647c103a88b87b9ac08"><param name="Name" value="DoublyList_insert_after"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#aeee42387c142b3d31d14938abb780720"><param name="Name" value="DoublyList_isEmpty"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a80fb67345e7c1b469044222bcd1491b7"><param name="Name" value="DoublyList_show"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a3453da53a9f3cab40879580760da7598"><param name="Name" value="DoublyList_size"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a302ba908ce7ec7ae55d03476b0895cda"><param name="Name" value="FixStack"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#aefc76a0a6c9cdf123ed8497e08942e15"><param name="Name" value="FixStack_count"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a61ee5d9fabce9201f6bf420d517c0348"><param name="Name" value="FixStack_destroy"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#aa0fccd049040f080049151229253495c"><param name="Name" value="FixStack_init"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a9cf0e2b404c0621777fbf01f9fc8df1a"><param name="Name" value="FixStack_isEmpty"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a22e65123bc8dc6389fb2f8c78b5ccb4a"><param name="Name" value="FixStack_peek"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#ad6ead8912d30a68dd53fc21a27d1c2c3"><param name="Name" value="FixStack_pop"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a79c33ae49232c97d8812d46404cc26cf"><param name="Name" value="FixStack_push"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#ab1705418ab55dbcc2e696632b5b97154"><param name="Name" value="FixStack_show"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a6e8df23dc94cc3a5bfe8a30addb6ebbf"><param name="Name" value="List"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a4d1dab99d5d6a54f1047357d191398f6"><param name="Name" value="List_delete"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a2a7f848415e499f298f2c257e0bfb74f"><param name="Name" value="List_destroy"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a5bfa1e18163c5b94d3307e85abaa0703"><param name="Name" value="List_getNode"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#aa9d63d607a82c3f41e04b3117bd875b0"><param name="Name" value="List_init"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#ab7db6e8982283fa75d2df5dceed3d679"><param name="Name" value="List_insert"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a3d6031774450cf8144aa030c79b85e83"><param name="Name" value="List_insert_front"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a61bd609d5e914b706c9d17f9a9f171c0"><param name="Name" value="List_isEmpty"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a4b7807d5f5bffea1096bab636b3e6939"><param name="Name" value="List_show"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#ad825b4fd605a85d54964ec4f2c194198"><param name="Name" value="List_size"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a6300e94a3cb95502c501e90bba0da65e"><param name="Name" value="MaxPQ"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#aa94df3c278f33ebe60810062465ec492"><param name="Name" value="MaxPQ_deleteMax"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a4f60d1dd403832a9d4e29e7bd29fc277"><param name="Name" value="MaxPQ_destroy"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a7de84f7676113bdde1cf2f08f5b0afc2"><param name="Name" value="MaxPQ_init"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a565a9f18f31575230419c2af9be7edca"><param name="Name" value="MaxPQ_insert"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a7e736099f70b3a71344fb8f43217c1f0"><param name="Name" value="MaxPQ_isEmpty"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#aa2cf783d0c425617aa23e08acaf2cfae"><param name="Name" value="MaxPQ_max"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#aaabee3ad7005232dbbe040be8ea5a0d2"><param name="Name" value="MaxPQ_show"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a3f9c024d740f8e848e824cad1d44ee1a"><param name="Name" value="MaxPQ_size"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a8ff62746a396b270606ff04818b7e4ac"><param name="Name" value="Node"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#ab0fe52267928e09940660b3ffd28a0a6"><param name="Name" value="Queue"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#acf3a613c1b4233c73fc4ac374c19cb8d"><param name="Name" value="Queue_dequeue"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a007a282859ccb292a7d10afe454a879a"><param name="Name" value="Queue_destroy"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a5242effd80dfae6b84691c87ccad71bc"><param name="Name" value="Queue_enqueue"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#aff43093655ff3e0671cc879cdf9b8293"><param name="Name" value="Queue_init"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#ac35cf1278adc5fcee472717feaefaab5"><param name="Name" value="Queue_isEmpty"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#aafa106ee5dc9fae8af440aadb437d1b7"><param name="Name" value="Queue_show"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#aae6a8c20cefe5adc716daa6d506e2410"><param name="Name" value="Queue_size"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a20fb25c979f5196e8bce39dcfccc664e"><param name="Name" value="ResizeStack"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#abc22bc8a762cfbda1c3584dcc181f529"><param name="Name" value="ResizeStack_count"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a0378d8e7b52a68d2ec78e2b1134f4f98"><param name="Name" value="ResizeStack_destroy"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a137040a0fe326d0e86ab5bcdd582afb6"><param name="Name" value="ResizeStack_init"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#aecb0c5004d118026d87132c8b3c0d10f"><param name="Name" value="ResizeStack_isEmpty"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a2f49ce6c8e82376820e0d79fb56a711a"><param name="Name" value="ResizeStack_peek"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a73ec32ef81124e23c8389b5b1e02f734"><param name="Name" value="ResizeStack_pop"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#aaadd189bcdc432a478f991833679ed5b"><param name="Name" value="ResizeStack_push"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a055db8f7b84df3e67f8ae985ab8f5493"><param name="Name" value="ResizeStack_show"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___bag.html#ad43c3812e6d13e0518d9f8b8f463ffcf"><param name="Name" value="count"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___bag.html#ad43c3812e6d13e0518d9f8b8f463ffcf"><param name="Name" value="_Bag"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___doubly_list.html#ad43c3812e6d13e0518d9f8b8f463ffcf"><param name="Name" value="_DoublyList"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___list.html#ad43c3812e6d13e0518d9f8b8f463ffcf"><param name="Name" value="_List"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___queue.html#ad43c3812e6d13e0518d9f8b8f463ffcf"><param name="Name" value="_Queue"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="helper_8h.html#ac810ba2a50607ab7b1c1f543451a62f6"><param name="Name" value="CPU_time_taken"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___node.html#a9eab91667db4d35c7231dcddf7b89a76"><param name="Name" value="data"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___node.html#a9eab91667db4d35c7231dcddf7b89a76"><param name="Name" value="_Node"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___two_way_link_node.html#a9eab91667db4d35c7231dcddf7b89a76"><param name="Name" value="_TwoWayLinkNode"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a6c76a65bc7aa6e0240c9a10115dec7fa"><param name="Name" value="Dequeue"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a7d2a759a1534f1dbd1d393ea41bf0ed2"><param name="Name" value="Dequeue_destroy"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#afbc0b980e78b5908b07369596ab294c7"><param name="Name" value="Dequeue_init"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a0ce112213904a59490569be37f7ab10a"><param name="Name" value="Dequeue_isEmpty"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a49c0673e09f388e0513b95ee95d6d3d3"><param name="Name" value="Dequeue_popBack"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a527f0909088ddf5b55b68e1c80298357"><param name="Name" value="Dequeue_popFront"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#afd685dae23ad5683b80e703847d4bb45"><param name="Name" value="Dequeue_pushBack"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a401663c2d96ca21b920d7f94189d83aa"><param name="Name" value="Dequeue_pushFront"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a52f2d327f89f1dfaa7adeb07d6d17e09"><param name="Name" value="Dequeue_show"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a7689c314cdbb6a3c38123833c2df451c"><param name="Name" value="Dequeue_size"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#ad512f51857bbc0257a0a649f463ef8f3"><param name="Name" value="DNode"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a9a083c43e96b568110c57f487368fd14"><param name="Name" value="DoublyList"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a734bb656bf2aedac9a53b7e08818fa9c"><param name="Name" value="DoublyList_delete"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a0d741bd3f44b2b9e325d819f2d884fab"><param name="Name" value="DoublyList_destroy"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#aafbb037248ad3956481b7ebf88e4d189"><param name="Name" value="DoublyList_getNode"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a34e56bccacd8de169a9a2c48dacd1288"><param name="Name" value="DoublyList_init"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a6364cad898a586c0415e4e6faee0bc9f"><param name="Name" value="DoublyList_insert"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a667af57ad91e7647c103a88b87b9ac08"><param name="Name" value="DoublyList_insert_after"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#aeee42387c142b3d31d14938abb780720"><param name="Name" value="DoublyList_isEmpty"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a80fb67345e7c1b469044222bcd1491b7"><param name="Name" value="DoublyList_show"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a3453da53a9f3cab40879580760da7598"><param name="Name" value="DoublyList_size"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="helper_8h.html#ac3d6b1032b198ff52aba85d814813711"><param name="Name" value="exchange"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a302ba908ce7ec7ae55d03476b0895cda"><param name="Name" value="FixStack"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#aefc76a0a6c9cdf123ed8497e08942e15"><param name="Name" value="FixStack_count"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a61ee5d9fabce9201f6bf420d517c0348"><param name="Name" value="FixStack_destroy"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#aa0fccd049040f080049151229253495c"><param name="Name" value="FixStack_init"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a9cf0e2b404c0621777fbf01f9fc8df1a"><param name="Name" value="FixStack_isEmpty"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a22e65123bc8dc6389fb2f8c78b5ccb4a"><param name="Name" value="FixStack_peek"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#ad6ead8912d30a68dd53fc21a27d1c2c3"><param name="Name" value="FixStack_pop"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a79c33ae49232c97d8812d46404cc26cf"><param name="Name" value="FixStack_push"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#ab1705418ab55dbcc2e696632b5b97154"><param name="Name" value="FixStack_show"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="helper_8h.html#a2b9bb176fa6405b0237f05cb6d5dc3e6"><param name="Name" value="Free"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___bag.html#aa3e81b47ac0637ebb1ea7cc12812405a"><param name="Name" value="head"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___bag.html#aa3e81b47ac0637ebb1ea7cc12812405a"><param name="Name" value="_Bag"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___doubly_list.html#afc73d55e915fcb44835139f8d5da2142"><param name="Name" value="_DoublyList"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___list.html#aa3e81b47ac0637ebb1ea7cc12812405a"><param name="Name" value="_List"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___queue.html#aa3e81b47ac0637ebb1ea7cc12812405a"><param name="Name" value="_Queue"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="sort_8h.html#a635136765676f4095275973534260b60"><param name="Name" value="heap_sort"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="helper_8h.html"><param name="Name" value="helper.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="helper_8h.html#ac810ba2a50607ab7b1c1f543451a62f6"><param name="Name" value="CPU_time_taken"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="helper_8h.html#ac3d6b1032b198ff52aba85d814813711"><param name="Name" value="exchange"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="helper_8h.html#a2b9bb176fa6405b0237f05cb6d5dc3e6"><param name="Name" value="Free"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="helper_8h.html#a718daa2ee90d164bb8224833535f0b3b"><param name="Name" value="Malloc"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="helper_8h.html#aebfa23dbf6ec30f35f2986a654bd47c1"><param name="Name" value="min"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="helper_8h.html#aa31f2c0213551c0395eb499d21420a03"><param name="Name" value="Random_integer"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="helper_8h.html#afb342ccada39b204a45288fb4547dc6d"><param name="Name" value="Randomly_fill_array"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="helper_8h.html#a702bc555734496b9688bda2f851b2030"><param name="Name" value="ShowArray"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="helper_8h.html#abc5e3b00a61acdec56ab070e32ee0616"><param name="Name" value="Shuffle_array"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="sort_8h.html#a4c18cd775a501de39322cb09ed161d91"><param name="Name" value="insertion_sort"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a6e8df23dc94cc3a5bfe8a30addb6ebbf"><param name="Name" value="List"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a4d1dab99d5d6a54f1047357d191398f6"><param name="Name" value="List_delete"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a2a7f848415e499f298f2c257e0bfb74f"><param name="Name" value="List_destroy"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a5bfa1e18163c5b94d3307e85abaa0703"><param name="Name" value="List_getNode"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#aa9d63d607a82c3f41e04b3117bd875b0"><param name="Name" value="List_init"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#ab7db6e8982283fa75d2df5dceed3d679"><param name="Name" value="List_insert"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a3d6031774450cf8144aa030c79b85e83"><param name="Name" value="List_insert_front"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a61bd609d5e914b706c9d17f9a9f171c0"><param name="Name" value="List_isEmpty"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a4b7807d5f5bffea1096bab636b3e6939"><param name="Name" value="List_show"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#ad825b4fd605a85d54964ec4f2c194198"><param name="Name" value="List_size"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="helper_8h.html#a718daa2ee90d164bb8224833535f0b3b"><param name="Name" value="Malloc"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a6300e94a3cb95502c501e90bba0da65e"><param name="Name" value="MaxPQ"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#aa94df3c278f33ebe60810062465ec492"><param name="Name" value="MaxPQ_deleteMax"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a4f60d1dd403832a9d4e29e7bd29fc277"><param name="Name" value="MaxPQ_destroy"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a7de84f7676113bdde1cf2f08f5b0afc2"><param name="Name" value="MaxPQ_init"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a565a9f18f31575230419c2af9be7edca"><param name="Name" value="MaxPQ_insert"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a7e736099f70b3a71344fb8f43217c1f0"><param name="Name" value="MaxPQ_isEmpty"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#aa2cf783d0c425617aa23e08acaf2cfae"><param name="Name" value="MaxPQ_max"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#aaabee3ad7005232dbbe040be8ea5a0d2"><param name="Name" value="MaxPQ_show"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a3f9c024d740f8e848e824cad1d44ee1a"><param name="Name" value="MaxPQ_size"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="sort_8h.html#a35cd73973a6293882a77594190d91763"><param name="Name" value="merge_sort"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="helper_8h.html#aebfa23dbf6ec30f35f2986a654bd47c1"><param name="Name" value="min"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___node.html#ac4f2601851f11490566c5225ef47f185"><param name="Name" value="next"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___node.html#ac4f2601851f11490566c5225ef47f185"><param name="Name" value="_Node"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___two_way_link_node.html#abe7b1aed93a24ff85f067cbb311de7df"><param name="Name" value="_TwoWayLinkNode"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a8ff62746a396b270606ff04818b7e4ac"><param name="Name" value="Node"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="sort_8h.html#ab68b2bb213c3ee015871b4631c2b0282"><param name="Name" value="optimize_merge_sort"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="sort_8h.html#abbb3dcdf9286c1345b2e2a6d9d7d4679"><param name="Name" value="optimize_quick_sort"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___two_way_link_node.html#afc8b989f23c32bacb08be6eb2bf95aab"><param name="Name" value="prev"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#ab0fe52267928e09940660b3ffd28a0a6"><param name="Name" value="Queue"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#acf3a613c1b4233c73fc4ac374c19cb8d"><param name="Name" value="Queue_dequeue"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a007a282859ccb292a7d10afe454a879a"><param name="Name" value="Queue_destroy"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a5242effd80dfae6b84691c87ccad71bc"><param name="Name" value="Queue_enqueue"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#aff43093655ff3e0671cc879cdf9b8293"><param name="Name" value="Queue_init"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#ac35cf1278adc5fcee472717feaefaab5"><param name="Name" value="Queue_isEmpty"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#aafa106ee5dc9fae8af440aadb437d1b7"><param name="Name" value="Queue_show"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#aae6a8c20cefe5adc716daa6d506e2410"><param name="Name" value="Queue_size"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="sort_8h.html#a0c5d9695093eef13aac0e1f62281e13b"><param name="Name" value="quick_sort"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="sort_8h.html#a43e61f5659592186c3d16bad42ea7fda"><param name="Name" value="quick_sort_3_way"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="helper_8h.html#aa31f2c0213551c0395eb499d21420a03"><param name="Name" value="Random_integer"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="helper_8h.html#afb342ccada39b204a45288fb4547dc6d"><param name="Name" value="Randomly_fill_array"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a20fb25c979f5196e8bce39dcfccc664e"><param name="Name" value="ResizeStack"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#abc22bc8a762cfbda1c3584dcc181f529"><param name="Name" value="ResizeStack_count"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a0378d8e7b52a68d2ec78e2b1134f4f98"><param name="Name" value="ResizeStack_destroy"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a137040a0fe326d0e86ab5bcdd582afb6"><param name="Name" value="ResizeStack_init"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#aecb0c5004d118026d87132c8b3c0d10f"><param name="Name" value="ResizeStack_isEmpty"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a2f49ce6c8e82376820e0d79fb56a711a"><param name="Name" value="ResizeStack_peek"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a73ec32ef81124e23c8389b5b1e02f734"><param name="Name" value="ResizeStack_pop"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#aaadd189bcdc432a478f991833679ed5b"><param name="Name" value="ResizeStack_push"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="collection_8h.html#a055db8f7b84df3e67f8ae985ab8f5493"><param name="Name" value="ResizeStack_show"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="sort_8h.html#a21619fa7ad0b5197e3177975392644c9"><param name="Name" value="selection_sort"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="sort_8h.html#aa7b9ecccabfc8e96f40dca0f93357348"><param name="Name" value="shell_sort"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="helper_8h.html#a702bc555734496b9688bda2f851b2030"><param name="Name" value="ShowArray"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="helper_8h.html#abc5e3b00a61acdec56ab070e32ee0616"><param name="Name" value="Shuffle_array"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___priority__queue.html#a439227feff9d7f55384e8780cfc2eb82"><param name="Name" value="size"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="sort_8h.html"><param name="Name" value="sort.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="sort_8h.html#a769a5a7f2d3c7c1ef819bfb080b06a54"><param name="Name" value="bottom_up_merge_sort"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="sort_8h.html#a635136765676f4095275973534260b60"><param name="Name" value="heap_sort"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="sort_8h.html#a4c18cd775a501de39322cb09ed161d91"><param name="Name" value="insertion_sort"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="sort_8h.html#a35cd73973a6293882a77594190d91763"><param name="Name" value="merge_sort"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="sort_8h.html#ab68b2bb213c3ee015871b4631c2b0282"><param name="Name" value="optimize_merge_sort"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="sort_8h.html#abbb3dcdf9286c1345b2e2a6d9d7d4679"><param name="Name" value="optimize_quick_sort"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="sort_8h.html#a0c5d9695093eef13aac0e1f62281e13b"><param name="Name" value="quick_sort"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="sort_8h.html#a43e61f5659592186c3d16bad42ea7fda"><param name="Name" value="quick_sort_3_way"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="sort_8h.html#a21619fa7ad0b5197e3177975392644c9"><param name="Name" value="selection_sort"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="sort_8h.html#aa7b9ecccabfc8e96f40dca0f93357348"><param name="Name" value="shell_sort"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___doubly_list.html#a3247912d441750d98d1548e4ce82f923"><param name="Name" value="tail"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___doubly_list.html#a3247912d441750d98d1548e4ce82f923"><param name="Name" value="_DoublyList"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___queue.html#a5536adfa9bc42404731e25b319dbf2b5"><param name="Name" value="_Queue"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___fix_stack.html#af93f4f37fc2ad9c37af4a715423b110c"><param name="Name" value="top"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___fix_stack.html#af93f4f37fc2ad9c37af4a715423b110c"><param name="Name" value="_FixStack"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct___resize_stack.html#af93f4f37fc2ad9c37af4a715423b110c"><param name="Name" value="_ResizeStack"></OBJECT>
+  </UL>
+</UL>
+</BODY>
+</HTML>

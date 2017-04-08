@@ -1,6 +1,7 @@
 #include "collection.h"
 #include "helper.h"
 #include "sort.h"
+#include "search.h"
 
 int main(){
 
@@ -149,7 +150,7 @@ int main(){
     /********************************************************
      * SELECTION SORT test client.
      ********************************************************/
-    const int N = 20;
+    const int N = 10;
     int array[N];
     Randomly_fill_array(array, N);
     selection_sort(array, N);
@@ -230,13 +231,104 @@ int main(){
     printf("MaxPQ : size %d\n", MaxPQ_size(&pq));
     printf("MaxPQ : max %d\n", MaxPQ_max(&pq));
     printf("MaxPQ : capacity %d\n", pq.capacity);
+    /*
+     * commenting as this test case will cause programme to exit.
     while (!MaxPQ_isEmpty(&pq)){
     printf("MaxPQ : deleteMax %d\n", MaxPQ_deleteMax(&pq));
     }
     MaxPQ_deleteMax(&pq);
+    */
     MaxPQ_destroy(&pq);
 
-    printf("Time taken : %g\n", CPU_time_taken(clock_begin));
+    /********************************************************                   
+     * HEAP SORT test client.
+     ********************************************************/
+    Randomly_fill_array(array, N);
+    heap_sort(array, N);
+    ShowArray(array, N, "HEAP_SORT"); 
+    
+    /******************************************************
+     * BINARY SEARCH test client.
+     *****************************************************/
+    int arr[10] = {1,12,33,44,55,66,77,88,99,100};
+    printf("BINARY SEARCH: contains key %d ? %d\n",1, binary_search(arr, 10, 1));
+    printf("BINARY SEARCH: contains key %d ? %d\n",88, binary_search(arr, 10, 88));
+    printf("BINARY SEARCH: contains key %d ? %d\n",100, binary_search(arr, 10, 100));
+    printf("BINARY SEARCH: contains key %d ? %d\n",7, binary_search(arr, 10, 7));
+ 
+    /*****************************************************
+     * SEQUENTIAL SEARCH UNORDERED SYMBOL TABLE.
+     ****************************************************/
+     UnorderST ust;
+     UnorderST_init(&ust);
+     UnorderST_put(&ust, 1, "Hi");
+     UnorderST_put(&ust, 2, "Hello");
+     UnorderST_put(&ust, 3, "world");
+     UnorderST_put(&ust, 4, "is");
+     UnorderST_put(&ust, 5, "good");
+     UnorderST_put(&ust, 6, "place");
+     for(int i = 1; i <= 6; i++){
+       printf("UnorderST: get %d : %s\n", i, UnorderST_get(&ust, i));
+     }
+     UnorderST_show(&ust);
+     printf("UnorderST: get %d : %s\n", 10, UnorderST_get(&ust, 10));
+     printf("UnorderST: contains %d : %d\n", 10, UnorderST_contains(&ust, 10));
+     printf("UnorderST: contains %d : %d\n", 1, UnorderST_contains(&ust, 1));
+     printf("UnorderST: isEmpty %d\n", UnorderST_isEmpty(&ust));
+     printf("UnorderST: size %d\n", UnorderST_size(&ust));
+     printf("UnorderST: delete %d\n", 5);
+     UnorderST_delete(&ust, 5);
+     UnorderST_show(&ust);
+     printf("UnorderST: isEmpty %d\n", UnorderST_isEmpty(&ust));
+     printf("UnorderST: size %d\n", UnorderST_size(&ust));
+     printf("UnorderST: delete %d\n", 5);
+     UnorderST_delete(&ust, 11);
+     UnorderST_destroy(&ust);
 
-    return 0;
+/***********************************************************************
+ * ORDERED ARRAY SYMBOL TABLE.
+ ***********************************************************************/
+     OrderedST ost;
+     OrderedST_init(&ost, 10);
+     OrderedST_put(&ost, 1, "Hi");
+     OrderedST_put(&ost, 11, "Hello");
+     OrderedST_put(&ost, 2, "world");
+     OrderedST_put(&ost, 5, "is");
+     OrderedST_put(&ost, 4, "good");
+     OrderedST_put(&ost, 6, "place");
+     for(int i = 1; i <= 6; i++){
+       printf("OrderedST: get %d : %s\n", i, OrderedST_get(&ost, i));
+     }
+     OrderedST_show(&ost);
+     printf("OrderedST: get %d : %s\n", 10, OrderedST_get(&ost, 10));
+     printf("OrderedST: contains %d : %d\n", 10, OrderedST_contains(&ost, 10));
+     printf("OrderedST: contains %d : %d\n", 1, OrderedST_contains(&ost, 1));
+     printf("OrderedST: isEmpty %d\n", OrderedST_isEmpty(&ost));
+     printf("OrderedST: size %d\n", OrderedST_size(&ost));
+     printf("OrderedST: delete %d\n", 5);
+     OrderedST_delete(&ost, 5);
+     OrderedST_show(&ost);
+     printf("OrderedST: isEmpty %d\n", OrderedST_isEmpty(&ost));
+     printf("OrderedST: size %d\n", OrderedST_size(&ost));
+     printf("OrderedST: delete %d\n", 5);
+     OrderedST_delete(&ost, 11);
+     OrderedST_show(&ost);
+     printf("OrderedST: min %d\n", OrderedST_min(&ost));
+     printf("OrderedST: max %d\n", OrderedST_max(&ost));
+     printf("OrderedST: no of keys %d\n", OrderedST_no_of_keys(&ost, 2, 4));
+     printf("OrderedST: deletemin\n");
+     OrderedST_deleteMin(&ost);
+     OrderedST_show(&ost);
+     printf("OrderedST: deleteMax\n");
+     OrderedST_deleteMax(&ost);
+     OrderedST_show(&ost);
+     printf("OrderedST: size %d\n", OrderedST_size(&ost));
+     printf("OrderedST: floor %d\n", OrderedST_floor(&ost, 3));
+     printf("OrderedST: ceiling %d\n", OrderedST_ceiling(&ost, 3));
+     OrderedST_destroy(&ost);
+
+
+     printf("Time taken : %g\n", CPU_time_taken(clock_begin));
+
+     return 0;
 }

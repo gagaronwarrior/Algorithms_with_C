@@ -285,9 +285,9 @@ int main(){
      UnorderST_delete(&ust, 11);
      UnorderST_destroy(&ust);
 
-/***********************************************************************
- * ORDERED ARRAY SYMBOL TABLE.
- ***********************************************************************/
+     /***********************************************************************
+      * ORDERED ARRAY SYMBOL TABLE.
+      ***********************************************************************/
      OrderedST ost;
      OrderedST_init(&ost, 10);
      OrderedST_put(&ost, 1, "Hi");
@@ -327,6 +327,43 @@ int main(){
      printf("OrderedST: ceiling %d\n", OrderedST_ceiling(&ost, 3));
      OrderedST_destroy(&ost);
 
+     /******************************************************
+      * BINARY SEARCH TREE SYMBOL TABLE.
+      *****************************************************/
+     BST tree;
+     BST_init(&tree);
+     BST_insert_iterative(&tree, 10, "Hi");
+     BST_insert_iterative(&tree, 5, "Hey");
+     BST_insert_iterative(&tree, 6, "hello");
+     BST_insert_iterative(&tree, 3, "there");
+     BST_insert_iterative(&tree, 4, "where"); 
+     BST_insert_iterative(&tree, 15, "whereever"); 
+     BST_insert_iterative(&tree, 17, "you"); 
+     BST_insert_iterative(&tree, 11, "are"); 
+     BST_insert_iterative(&tree, 13, "awesum"); 
+     BST_show(&tree);
+     printf("BST: tree height= %d\n", BST_tree_height(&tree));
+     printf("BST: get key %d: %s\n", 0, BST_get_recursive(&tree, 0));
+     printf("BST: get key %d: %s\n", 1, BST_get_recursive(&tree, 11));
+     printf("BST: get key %d: %s\n", 2, BST_get_recursive(&tree, 13));
+     printf("BST: get key %d: %s\n", 3, BST_get_recursive(&tree, 3));
+     printf("BST: get key %d: %s\n", 4, BST_get_recursive(&tree, 4));
+     printf("BST: get key %d: %s\n", 5, BST_get_recursive(&tree, 5));
+     printf("BST: min key %d\n", BST_get_min_key(&tree));
+     printf("BST: max key %d\n", BST_get_max_key(&tree));
+     printf("BST: delete min \n");
+     BST_delete_min_iterative(&tree);
+     BST_show(&tree);
+     printf("BST: tree height= %d\n", BST_tree_height(&tree));
+     printf("BST: delete max\n");
+     BST_delete_max_iterative(&tree);
+     BST_show(&tree);
+     printf("BST: tree height= %d\n", BST_tree_height(&tree));
+     printf("BST: delete %d\n", 5);
+     BST_delete_recursive(&tree, 5);
+     BST_show(&tree);
+     printf("BST: tree height= %d\n", BST_tree_height(&tree));
+     BST_destroy(&tree);
 
      printf("Time taken : %g\n", CPU_time_taken(clock_begin));
 

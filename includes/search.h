@@ -207,6 +207,38 @@ void OrderedST_deleteMax(OrderedST* ost);
 void OrderedST_show(OrderedST* ost);
 void OrderedST_destroy(OrderedST* ost);
 
+/**
+ * @brief BINARY SEARCH TREE SYMBOL TABLE.
+ * This symbol table implementation uses binary search tree to store 
+ * key value pair.
+ */
 
+typedef struct _Binary_search_tree_node{
+  int key;
+  char* value;
+  int size;
+  struct _Binary_search_tree_node* left;
+  struct _Binary_search_tree_node* right;
+} BST_node;
+
+typedef struct _Binary_search_tree{
+  BST_node* root;
+} BST;
+
+void BST_init(BST* tree);
+char* BST_get_recursive(BST* tree, int key);
+char* BST_get_iterative(BST* tree, int key);
+int BST_get_min_key(BST* tree);
+int BST_get_max_key(BST* tree);
+void BST_insert_recursive(BST* tree, int key, char* value);
+void BST_insert_iterative(BST* tree, int key, char* value);
+void BST_delete_min_recursive(BST* tree);
+void BST_delete_min_iterative(BST* tree);
+void BST_delete_max_recursive(BST* tree);
+void BST_delete_max_iterative(BST* tree);
+void BST_delete_recursive(BST* tree, int key);
+int BST_tree_height(BST* tree);
+void BST_show(BST* tree);
+void BST_destroy(BST* tree);
 
 #endif

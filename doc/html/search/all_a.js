@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['left',['left',['../struct___binary__search__tree__node.html#a3282aa5048fe0f4190af42022abade77',1,'_Binary_search_tree_node']]],
   ['list',['List',['../collection_8h.html#a6e8df23dc94cc3a5bfe8a30addb6ebbf',1,'collection.h']]],
   ['list_5fdelete',['List_delete',['../collection_8h.html#a4d1dab99d5d6a54f1047357d191398f6',1,'collection.h']]],
   ['list_5fdestroy',['List_destroy',['../collection_8h.html#a2a7f848415e499f298f2c257e0bfb74f',1,'collection.h']]],

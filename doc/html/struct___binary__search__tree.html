@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Algorithms: _SequentialSearchST Struct Reference</title>
+<title>Algorithms: _Binary_search_tree Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -61,58 +61,39 @@ $(function() {
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">_SequentialSearchST Struct Reference</div>  </div>
+<div class="title">_Binary_search_tree Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>UNORDERED SEQUENTIAL SEARCH SYMBOL TABLE This data structure is single link list, with each node as key-value pair.  
- <a href="struct___sequential_search_s_t.html#details">More...</a></p>
+<p>BINARY SEARCH TREE SYMBOL TABLE. This symbol table implementation uses binary search tree to store key value pair.  
+ <a href="struct___binary__search__tree.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="search_8h_source.html">search.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a8ce5f2620e6a2ee6867f8794707ac8c2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="search_8h.html#abbfc9ba7ffe1e7568c42c0e846788567">UnorderST_node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct___sequential_search_s_t.html#a8ce5f2620e6a2ee6867f8794707ac8c2">head</a></td></tr>
-<tr class="separator:a8ce5f2620e6a2ee6867f8794707ac8c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a439227feff9d7f55384e8780cfc2eb82"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct___sequential_search_s_t.html#a439227feff9d7f55384e8780cfc2eb82">size</a></td></tr>
-<tr class="separator:a439227feff9d7f55384e8780cfc2eb82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20141613e476fd49978cc1a8649f5104"><td class="memItemLeft" align="right" valign="top"><a class="el" href="search_8h.html#ac809f470c4a6a5fbd8a51c4db44c3368">BST_node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct___binary__search__tree.html#a20141613e476fd49978cc1a8649f5104">root</a></td></tr>
+<tr class="separator:a20141613e476fd49978cc1a8649f5104"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>UNORDERED SEQUENTIAL SEARCH SYMBOL TABLE This data structure is single link list, with each node as key-value pair. </p>
+<div class="textblock"><p>BINARY SEARCH TREE SYMBOL TABLE. This symbol table implementation uses binary search tree to store key value pair. </p>
 
-<p class="definition">Definition at line <a class="el" href="search_8h_source.html#l00052">52</a> of file <a class="el" href="search_8h_source.html">search.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="search_8h_source.html#l00233">233</a> of file <a class="el" href="search_8h_source.html">search.h</a>.</p>
 </div><h2 class="groupheader">Field Documentation</h2>
-<a id="a8ce5f2620e6a2ee6867f8794707ac8c2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8ce5f2620e6a2ee6867f8794707ac8c2">&#9670;&nbsp;</a></span>head</h2>
+<a id="a20141613e476fd49978cc1a8649f5104"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20141613e476fd49978cc1a8649f5104">&#9670;&nbsp;</a></span>root</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="search_8h.html#abbfc9ba7ffe1e7568c42c0e846788567">UnorderST_node</a>* head</td>
+          <td class="memname"><a class="el" href="search_8h.html#ac809f470c4a6a5fbd8a51c4db44c3368">BST_node</a>* root</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Head poniter to the start of the single link list </p>
+<p>Pointer of type <a class="el" href="search_8h.html#ac809f470c4a6a5fbd8a51c4db44c3368" title="The definition of the Binary Search tree node. ">BST_node</a> pointing to the root of <a class="el" href="search_8h.html#a9ff9bdd9a1a220b30945326e961a3d26" title="BINARY SEARCH TREE SYMBOL TABLE. This symbol table implementation uses binary search tree to store ke...">BST</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="search_8h_source.html#l00053">53</a> of file <a class="el" href="search_8h_source.html">search.h</a>.</p>
-
-</div>
-</div>
-<a id="a439227feff9d7f55384e8780cfc2eb82"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a439227feff9d7f55384e8780cfc2eb82">&#9670;&nbsp;</a></span>size</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int size</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>The size of Single link list (Sequential Symbol table) </p>
-
-<p class="definition">Definition at line <a class="el" href="search_8h_source.html#l00054">54</a> of file <a class="el" href="search_8h_source.html">search.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="search_8h_source.html#l00234">234</a> of file <a class="el" href="search_8h_source.html">search.h</a>.</p>
 
 </div>
 </div>

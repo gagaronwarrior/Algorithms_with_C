@@ -10,5 +10,7 @@ var searchData=
   ['resizestack_5fpeek',['ResizeStack_peek',['../collection_8h.html#a2f49ce6c8e82376820e0d79fb56a711a',1,'collection.h']]],
   ['resizestack_5fpop',['ResizeStack_pop',['../collection_8h.html#a73ec32ef81124e23c8389b5b1e02f734',1,'collection.h']]],
   ['resizestack_5fpush',['ResizeStack_push',['../collection_8h.html#aaadd189bcdc432a478f991833679ed5b',1,'collection.h']]],
-  ['resizestack_5fshow',['ResizeStack_show',['../collection_8h.html#a055db8f7b84df3e67f8ae985ab8f5493',1,'collection.h']]]
+  ['resizestack_5fshow',['ResizeStack_show',['../collection_8h.html#a055db8f7b84df3e67f8ae985ab8f5493',1,'collection.h']]],
+  ['right',['right',['../struct___binary__search__tree__node.html#a04fce1a04aadb3d14019347085797bb4',1,'_Binary_search_tree_node']]],
+  ['root',['root',['../struct___binary__search__tree.html#a20141613e476fd49978cc1a8649f5104',1,'_Binary_search_tree']]]
 ];

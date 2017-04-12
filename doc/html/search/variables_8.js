@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['tail',['tail',['../struct___queue.html#a5536adfa9bc42404731e25b319dbf2b5',1,'_Queue::tail()'],['../struct___doubly_list.html#a3247912d441750d98d1548e4ce82f923',1,'_DoublyList::tail()']]],
-  ['top',['top',['../struct___fix_stack.html#af93f4f37fc2ad9c37af4a715423b110c',1,'_FixStack::top()'],['../struct___resize_stack.html#af93f4f37fc2ad9c37af4a715423b110c',1,'_ResizeStack::top()']]]
+  ['right',['right',['../struct___binary__search__tree__node.html#a04fce1a04aadb3d14019347085797bb4',1,'_Binary_search_tree_node']]],
+  ['root',['root',['../struct___binary__search__tree.html#a20141613e476fd49978cc1a8649f5104',1,'_Binary_search_tree']]]
 ];

@@ -3,6 +3,9 @@
  *
  * It covers following search algorithms:
  * @see binary_search
+ * @see Unordered Sequential Search symbol table.
+ * @see Ordered Sequential Search symbol table.
+ * @see Binary Search tree symbol table.
  * 
  * @author Gagaron
  * @note All search algorithms only support <b>INTEGER</b> type key and 
@@ -32,13 +35,9 @@
  */
 int binary_search(int* array, int length, int key);
 
-/**
- * @brief SEQUENTIAL SEARCH SYMBOL TABLE
- * This data structure is single link list, with each node as key-value pair.
- */
 
 /**
- * @brief Definition of Node in Sequential search symbol table.
+ * @brief Definition of Node in Sequential search symbol table #UnorderST.
  */
 typedef struct _SequentialSeachST_node{
   int key;       /**< Node containing interger Key. */
@@ -47,7 +46,8 @@ typedef struct _SequentialSeachST_node{
 } UnorderST_node;
 
 /**
- * @brief Definition of Sequential search symbol table.
+ * @brief UNORDERED SEQUENTIAL SEARCH SYMBOL TABLE
+ * This data structure is single link list, with each node as key-value pair.
  */
 typedef struct _SequentialSearchST{
   UnorderST_node* head;  /**< Head poniter to the start of the single link list */
@@ -177,15 +177,22 @@ void UnorderST_show(UnorderST* st);
 void UnorderST_destroy(UnorderST* st);
 
 
+/**
+ * @brief The Element type used to create array of #OrderedST.
+ */
 typedef struct _OrderedArrayElement{
-  int key;
-  char* value;
+  int key;     /**< The integer key use to store value in array. */
+  char* value; /**< The string value corresponding to the key */
 } Element;
 
+/**
+ * @brief ORDERED SEQUENTIAL SEARCH SYMBOL TABLE.
+ * This uses the array data-structure to store (key, value) pair in ascending order.
+ */
 typedef struct _OrderedArrayST{
-  Element* array;
-  int size;
-  int capacity;
+  Element* array; /**< Pointer to the array of #Element type.*/
+  int size;       /**< The number of (key, value) pair in array. */
+  int capacity;  /**< The total capacity of the array */
 } OrderedST;
 
 void OrderedST_init(OrderedST* ost, int capacity);
@@ -208,37 +215,277 @@ void OrderedST_show(OrderedST* ost);
 void OrderedST_destroy(OrderedST* ost);
 
 /**
+ * @brief The definition of the Binary Search tree node.
+ */
+typedef struct _Binary_search_tree_node{
+  int key;      /**< Key used to store the data in #BST node */
+  char* value; /**< The value corresponding to the key in #BST node */
+  int size;   /**< The subtree size rooted at the current node */
+  struct _Binary_search_tree_node* left;   /**< Pointer to the left #BST_node */
+  struct _Binary_search_tree_node* right;  /**< Pointer to the right #BST_node */
+} BST_node;
+
+/**
  * @brief BINARY SEARCH TREE SYMBOL TABLE.
  * This symbol table implementation uses binary search tree to store 
  * key value pair.
  */
-
-typedef struct _Binary_search_tree_node{
-  int key;
-  char* value;
-  int size;
-  struct _Binary_search_tree_node* left;
-  struct _Binary_search_tree_node* right;
-} BST_node;
-
-typedef struct _Binary_search_tree{
-  BST_node* root;
+typedef struct _Binary_search_tree{                                                                                                                           
+  BST_node* root; /**< Pointer of type #BST_node pointing to the root of #BST */
 } BST;
 
+/**
+ * @brief This function initializes the Binary search tree #BST.
+ * 
+ * Time Complexity : O(1)
+ * 
+ * @param tree passing the address of the #BST tree.
+ * @return Void
+ * @code 
+ *  BST_init(&tree);
+ * @endcode
+ */
 void BST_init(BST* tree);
+
+/**
+ * @brief This function get the value corresponding to given key in tree #BST.
+ * It use the recursive implementation.
+ * 
+ * Time Complexity : 
+ * worst_case =  O(n)
+ * Best and Avg case = O(lgn)
+ * 
+ * @param tree passing the address of the #BST tree.
+ * @param key integer value to search the #BST tree.
+ * @return The value corresponding to the Key.
+ *
+ * @code 
+ *  char* value = BST_get_recursive(&tree, key);
+ * @endcode
+ */
 char* BST_get_recursive(BST* tree, int key);
+
+/**
+ * @brief This function get the value corresponding to given key in tree #BST.
+ * It use the iterative implementation.
+ * 
+ * Time Complexity : 
+ * worst_case =  O(n)
+ * Best and Avg case = O(lgn)
+ * 
+ * @param tree passing the address of the #BST tree.
+ * @param key integer value to search the #BST tree.
+ * @return The value corresponding to the Key.
+ *
+ * @code 
+ *  char* value = BST_get_recursive(&tree, key);
+ * @endcode
+ */
 char* BST_get_iterative(BST* tree, int key);
+
+/**
+ * @brief This function gets the minimum key in tree #BST.
+ * It use the recursive implementation.
+ * 
+ * Time Complexity : 
+ * worst_case =  O(n)
+ * Best and Avg case = O(lgn)
+ * 
+ * @param tree passing the address of the #BST tree.
+ * @return The key value.
+ *
+ * @code 
+ *  int min_key = BST_get_min_key(&tree, key);
+ * @endcode
+ */
 int BST_get_min_key(BST* tree);
+
+/**
+ * @brief This function gets the maximum key in tree #BST.
+ * It use the recursive implementation.
+ * 
+ * Time Complexity : 
+ * worst_case =  O(n)
+ * Best and Avg case = O(lgn)
+ * 
+ * @param tree passing the address of the #BST tree.
+ * @return The key value.
+ *
+ * @code 
+ *  int max_key = BST_get_max_key(&tree, key);
+ * @endcode
+ */
 int BST_get_max_key(BST* tree);
+
+/**
+ * @brief This function insert the (key, value) pair in tree #BST.
+ * It use the recursive implementation.
+ * 
+ * Time Complexity : 
+ * worst_case =  O(n)
+ * Best and Avg case = O(lgn)
+ * 
+ * @param tree passing the address of the #BST tree.
+ * @param key the integer key to be inserted in #BST.
+ * @param value the string value corresponding to key.
+ * @return Void
+ *
+ * @code 
+ *  BST_insert_recursive(&tree, key, value);
+ * @endcode
+ */
 void BST_insert_recursive(BST* tree, int key, char* value);
+
+/**
+ * @brief This function insert the (key, value) pair in tree #BST.
+ * It use the iterative implementation.
+ * 
+ * Time Complexity : 
+ * worst_case =  O(n)
+ * Best and Avg case = O(lgn)
+ * 
+ * @param tree passing the address of the #BST tree.
+ * @param key the integer key to be inserted in #BST.
+ * @param value the string value corresponding to key.
+ * @return Void
+ *
+ * @code 
+ *  BST_insert_iterative(&tree, key, value);
+ * @endcode
+ */
 void BST_insert_iterative(BST* tree, int key, char* value);
+
+/**
+ * @brief This function deletes the minimum key and corresponding value and node in tree #BST.
+ * It use the recursive implementation.
+ * 
+ * Time Complexity : 
+ * worst_case =  O(n)
+ * Best and Avg case = O(lgn)
+ * 
+ * @param tree passing the address of the #BST tree.
+ * @return Void
+ *
+ * @code 
+ *  BST_delete_min_recursive(&tree);
+ * @endcode
+ */
 void BST_delete_min_recursive(BST* tree);
+
+/**
+ * @brief This function deletes the minimum key and corresponding value and node in tree #BST.
+ * It use the iterative implementation.
+ * 
+ * Time Complexity : 
+ * worst_case =  O(n)
+ * Best and Avg case = O(lgn)
+ * 
+ * @param tree passing the address of the #BST tree.
+ * @return Void
+ *
+ * @code 
+ *  BST_delete_min_iterative(&tree);
+ * @endcode
+ */
 void BST_delete_min_iterative(BST* tree);
+
+/**
+ * @brief This function deletes the maximum key and corresponding value and node in tree #BST.
+ * It use the recursive implementation.
+ * 
+ * Time Complexity : 
+ * worst_case =  O(n)
+ * Best and Avg case = O(lgn)
+ * 
+ * @param tree passing the address of the #BST tree.
+ * @return Void
+ *
+ * @code 
+ *  BST_delete_max_recursive(&tree);
+ * @endcode
+ */
 void BST_delete_max_recursive(BST* tree);
+
+/**
+ * @brief This function deletes the maximum key and corresponding value and node in tree #BST.
+ * It use the iterative implementation.
+ * 
+ * Time Complexity : 
+ * worst_case =  O(n)
+ * Best and Avg case = O(lgn)
+ * 
+ * @param tree passing the address of the #BST tree.
+ * @return Void
+ *
+ * @code 
+ *  BST_delete_max_iterative(&tree);
+ * @endcode
+ */
 void BST_delete_max_iterative(BST* tree);
+
+/**
+ * @brief This function deletes the given key and corresponding value and node in tree #BST.
+ * It use the recursive implementation.
+ * 
+ * Time Complexity : 
+ * worst_case =  O(n)
+ * Best and Avg case = O(lgn)
+ * 
+ * @param tree passing the address of the #BST tree.
+ * @param key the key to be deleted.
+ * @return Void
+ *
+ * @code 
+ *  BST_delete_recursive(&tree, key);
+ * @endcode
+ */
 void BST_delete_recursive(BST* tree, int key);
+
+/**
+ * @brief This function calculates the height of the tree #BST.
+ * It use the recursive implementation.
+ * Root node is treated as level 0, subsequent levels are increased,
+ * as node increase downward.
+ * 
+ * Time Complexity : 
+ * worst_case =  O(n)
+ * Best and Avg case = O(lgn)
+ * 
+ * @param tree passing the address of the #BST tree.
+ * @return Void
+ *
+ * @code 
+ *  int height = BST_tree_height(&tree);
+ * @endcode
+ */
 int BST_tree_height(BST* tree);
+
+/**
+ * @brief This function display the tree #BST, in ascending order (INORDER traversal).
+ * 
+ * Time Complexity : O(n)
+ * 
+ * @param tree passing the address of the #BST tree.
+ * @return Void
+ *
+ * @code 
+ *  BST_show(&tree);
+ * @endcode
+ */
 void BST_show(BST* tree);
+
+/**
+ * @brief This function deletes all the nodes of #BST, reset value of tree root to NULL.
+ * 
+ * Time Complexity : O(n)
+ * 
+ * @param tree passing the address of the #BST tree.
+ * @return Void
+ *
+ * @code 
+ *  BST_destroy(&tree);
+ * @endcode
+ */
 void BST_destroy(BST* tree);
 
 #endif

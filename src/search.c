@@ -613,3 +613,119 @@ void BST_destroy(BST* tree){
   }
 }
 
+/******************************************************************
+ * LEFT LEANING RED BLACK BINARY SEARCH TREE.
+ ******************************************************************/
+void RB_BST_init(RB_BST* tree){
+  tree->root = NULL;
+}
+
+int _RB_BST_size(RB_BST_node* root){
+  if (root == NULL) return 0;
+  return root->size;
+}
+
+int RB_BST_size(RB_BST* tree){
+  return _RB_BST_size(tree->root);
+}
+
+bool RB_BST_isRed(RB_BST_node* root){
+  if (root == NULL) return false;
+  return (root->color == RED);
+}
+
+RB_BST_node* RB_BST_rotate_left(RB_BST_node* root){
+  RB_BST_node* temp = root->right;
+  root->right = temp->left;
+  temp->left = root;
+  temp->color = root->color;
+  root->color = RED;
+  temp->size = root->size;
+  root->size = _RB_BST_size(root->left) + _RB_BST_size(root->right) + 1;
+  return temp;
+}
+
+RB_BST_node* RB_BST_rotate_right(RB_BST_node* root){
+  RB_BST_node* temp = root->left;
+  root->left = temp->right;
+  temp->right = root;
+  temp->color = root->color;
+  root->color = RED;
+  temp->size = root->size;
+  root->size = _RB_BST_size(root->left) + _RB_BST_size(root->left) + 1;
+  return temp;
+}
+
+void RB_BST_flip_colors(RB_BST_node* root){
+  root->left->color = BLACK;
+  root->right->color = BLACK;
+  root->color = RED;
+}
+
+RB_BST_node* _RB_BST_insert_recursive(RB_BST_node* root, int key, char* value){
+  if(root == NULL){
+    RB_BST_node* node = (RB_BST_node* )Malloc(sizeof(RB_BST_node));
+    node->key = key;
+    node->value = value;
+    node->size = 1;
+    node->color = RED;
+    node->left = NULL;
+    node->right = NULL;
+    return node;
+  }
+
+  if (key < root->key) root->left = _RB_BST_insert_recursive(root->left, key, value);
+  else if (key > root->key) root->right = _RB_BST_insert_recursive(root->right, key, value);
+  else root->value = value;
+
+  if (RB_BST_isRed(root->right) && !RB_BST_isRed(root->left)) root = RB_BST_rotate_left(root);
+  if (RB_BST_isRed(root->left) && RB_BST_isRed(root->left->left)) root = RB_BST_rotate_right(root);
+  if (RB_BST_isRed(root->left) && RB_BST_isRed(root->right)) RB_BST_flip_colors(root);
+
+  root->size = _RB_BST_size(root->left) + _RB_BST_size(root->right) + 1;
+  return root;
+}
+
+void RB_BST_insert_recursive(RB_BST* tree, int key, char* value){
+  tree->root = _RB_BST_insert_recursive(tree->root, key, value);
+  tree->root->color = BLACK;
+}
+
+
+RB_BST_node* _RB_BST_get_recursive(RB_BST_node* node, int key){
+  if (node == NULL){
+    return NULL;                                                                                          
+  }
+  if (key < node->key) return _RB_BST_get_recursive(node->left, key);
+  else if (key > node->key) return _RB_BST_get_recursive(node->right, key);
+  else return node;
+}
+
+char* RB_BST_get_recursive(RB_BST* tree, int key){
+  RB_BST_node* node = _RB_BST_get_recursive(tree->root, key);
+  if (node == NULL){
+    printf("RB_BST: ERROR, key not present in tree \n");
+    return NULL;
+  }
+  else{
+    return node->value;
+  }
+}
+
+/*************************************************************************
+ * RB_BST_SHOW: will display tree in ascending order with inorder traversal.
+ **************************************************************************/
+void _RB_BST_show(RB_BST_node* root){
+  if (root == NULL) return;
+  _RB_BST_show(root->left);
+  printf("     Node: key[%d]->value[%s] size[%d] color[%s] childnode-(left, right)-> (%d, %d)\n", \
+      root->key, root->value, root->size, ((root->color == RED)? "RED":"BLACK"), ((root->left != NULL)?root->left->key:-1), ((root->right != NULL)?root->right->key:-1));
+  _RB_BST_show(root->right);
+}
+
+void RB_BST_show(RB_BST* tree){
+  printf("RB_BST: { \n");
+  _RB_BST_show(tree->root);
+  printf("  }\n");
+}
+

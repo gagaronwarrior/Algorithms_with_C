@@ -488,4 +488,32 @@ void BST_show(BST* tree);
  */
 void BST_destroy(BST* tree);
 
+/**
+ * @brief LEFT LEANING RED-BLACK BINARY SEARCH TREE.
+ */
+typedef enum _Color{
+  RED=1,
+  BLACK=0
+}Color;   
+
+typedef struct _RB_BST_node{
+  int key;
+  char* value;
+  Color color;
+  int size;
+  struct _RB_BST_node* left;
+  struct _RB_BST_node* right;
+ } RB_BST_node;
+
+typedef struct _RB_BST{
+  RB_BST_node* root;
+}RB_BST;
+
+
+void RB_BST_init(RB_BST* tree);
+void RB_BST_insert_recursive(RB_BST* tree, int key, char* value);
+char* RB_BST_get_recursive(RB_BST* tree, int key);
+void RB_BST_show(RB_BST* tree);
+
+
 #endif

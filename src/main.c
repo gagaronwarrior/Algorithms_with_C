@@ -365,6 +365,24 @@ int main(){
      printf("BST: tree height= %d\n", BST_tree_height(&tree));
      BST_destroy(&tree);
 
+     /*******************************************************************
+      * LEFT LEANING RED BLACK BINARY SEARCH TREE.
+      ******************************************************************/
+      RB_BST rb_tree;
+      RB_BST_init(&rb_tree);
+      RB_BST_insert_recursive(&rb_tree, 1, "A");
+      RB_BST_insert_recursive(&rb_tree, 3, "C");
+      RB_BST_insert_recursive(&rb_tree, 5, "E");
+      RB_BST_insert_recursive(&rb_tree, 8, "H");
+      RB_BST_insert_recursive(&rb_tree, 12, "L");
+      RB_BST_insert_recursive(&rb_tree, 13, "M");
+      RB_BST_insert_recursive(&rb_tree, 16, "P");
+      RB_BST_insert_recursive(&rb_tree, 17, "R");
+      RB_BST_insert_recursive(&rb_tree, 18, "S");
+      RB_BST_insert_recursive(&rb_tree, 24, "X");
+      RB_BST_show(&rb_tree);
+
+
      printf("Time taken : %g\n", CPU_time_taken(clock_begin));
 
      return 0;

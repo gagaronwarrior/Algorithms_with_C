@@ -117,8 +117,23 @@ void _Graph_path_depth_first_search(Graph_path* gp, int s){
 }   
 
 void _Graph_path_breath_first_search(Graph_path* gp, int s){
+  Queue q;
+  Queue_init(&q);
+  gp->marked[s] = true;
+  Queue_enqueue(&q, s);
+  while (!Queue_isEmpty(&q)){
+    int v = Queue_dequeue(&q);
+    for (Node* n = Bag_iterator_begin(&gp->graph->adj[v]); n != Bag_iterator_end(); n = Bag_iterator_next(n)){
+      if (!gp->marked[n->data]){
+        gp->marked[n->data] = true;
+        gp->edge_to[n->data] = v;
+        gp->count += 1;
+        Queue_enqueue(&q, n->data);
+      }
+    }
+  }
+  Queue_destroy(&q);
 }
-
 
 void Graph_path_search(Graph_path* gp, Search_method method){
   if (method == DFS){

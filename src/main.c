@@ -428,8 +428,29 @@ int main(){
   Graph_path_show_path(&gp, 5);
   Graph_path_show_path(&gp, 6);
   Graph_path_show_path(&gp, 9);
+
+  /*******************************************************************************
+   * GRAPH: Breadth first search.
+   ******************************************************************************/
+  Graph_path gp1;
+  Graph_path_init(&gp1, &g, 0);
+  Graph_path_search(&gp1, BFS);
+  printf("GRAPH PATH: has path to %d: %d\n", 5, Graph_path_has_path_to(&gp1, 5));
+  printf("GRAPH PATH: has path to %d: %d\n", 2, Graph_path_has_path_to(&gp1, 2));
+  printf("GRAPH PATH: has path to %d: %d\n", 9, Graph_path_has_path_to(&gp1, 9));
+  printf("GRAPH PATH: connected node %d\n", Graph_path_count(&gp1));
+  Graph_path_show_path(&gp1, 0);
+  Graph_path_show_path(&gp1, 1);
+  Graph_path_show_path(&gp1, 2);
+  Graph_path_show_path(&gp1, 3);
+  Graph_path_show_path(&gp1, 4);
+  Graph_path_show_path(&gp1, 5);
+  Graph_path_show_path(&gp1, 6);
+  Graph_path_show_path(&gp1, 9);
+
   Graph_destroy(&g);
   Graph_path_destroy(&gp);
+  Graph_path_destroy(&gp1);
 
   printf("Time taken : %g\n", CPU_time_taken(clock_begin));
 

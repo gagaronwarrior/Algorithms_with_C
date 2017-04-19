@@ -20,6 +20,9 @@ void Bag_init(Bag* bag);
 void Bag_add(Bag* bag, int value);
 bool Bag_isEmpty(Bag* bag);
 int Bag_count(Bag* bag);
+Node* Bag_iterator_begin(Bag* bag);
+Node* Bag_iterator_next(Node* node);
+Node* Bag_iterator_end();
 void Bag_show(Bag* bag);
 void Bag_destroy(Bag* bag);
 

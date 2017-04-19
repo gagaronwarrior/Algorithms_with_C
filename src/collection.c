@@ -27,6 +27,18 @@ int Bag_count(Bag* bag){
     return bag->count;
 }
 
+Node* Bag_iterator_begin(Bag* bag){
+return bag->head;
+}
+
+Node* Bag_iterator_next(Node* node){
+return node->next;
+}
+
+Node* Bag_iterator_end(void){
+return NULL;
+}
+
 void Bag_show(Bag* bag){
     Node* temp = bag->head;
     printf("Bag: {");

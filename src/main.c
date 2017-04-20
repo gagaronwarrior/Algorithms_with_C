@@ -428,6 +428,7 @@ int main(){
   Graph_path_show_path(&gp, 5);
   Graph_path_show_path(&gp, 6);
   Graph_path_show_path(&gp, 9);
+  Graph_path_destroy(&gp);
 
   /*******************************************************************************
    * GRAPH: Breadth first search.
@@ -447,10 +448,21 @@ int main(){
   Graph_path_show_path(&gp1, 5);
   Graph_path_show_path(&gp1, 6);
   Graph_path_show_path(&gp1, 9);
-
-  Graph_destroy(&g);
-  Graph_path_destroy(&gp);
   Graph_path_destroy(&gp1);
+
+  /*********************************************************************************
+   * GRAPH_CONNECTED_COMPONENTS.
+   ********************************************************************************/
+  CC cc;
+  CC_init(&cc, &g);
+  CC_create_id(&cc);
+  printf("CC: no of connected component %d\n", CC_no_of_connected_component(&cc));
+  printf("CC: Is %d and %d connected ? %d \n", 0, 5, CC_is_connected(&cc, 0, 5));
+  printf("CC: Is %d and %d connected ? %d \n", 0, 7, CC_is_connected(&cc, 0, 7));
+  printf("CC: Is %d and %d connected ? %d \n", 7, 9, CC_is_connected(&cc, 7, 9));
+  CC_show_components(&cc);
+  CC_destroy(&cc);
+  Graph_destroy(&g);
 
   printf("Time taken : %g\n", CPU_time_taken(clock_begin));
 

@@ -40,4 +40,19 @@ int Graph_path_count(Graph_path* gp);
 void Graph_path_search(Graph_path* gp, Search_method method);
 void Graph_path_show_path(Graph_path* gp, int vertex_to);
 void Graph_path_destroy(Graph_path* gp);
+
+typedef struct _Connected_Component{
+bool* marked;
+int* id;
+int count;
+Graph* graph;
+} CC;
+
+void CC_init(CC* cc, Graph* graph);
+void CC_create_id(CC* cc);
+int CC_no_of_connected_component(CC* cc);
+bool CC_is_connected(CC* cc, int v, int w);
+void CC_show_components(CC* cc);
+void CC_destroy(CC* cc);
+
 #endif

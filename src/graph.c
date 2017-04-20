@@ -173,3 +173,71 @@ void Graph_path_destroy(Graph_path* gp){
   gp->source_vertex = 0;
   gp->graph = NULL;
 }
+
+/**********************************************************************
+ * GRAPH_CONNECTED_COMPONENTS: Finds the number of connected components 
+ * returns is connected query in constant time.
+ **********************************************************************/
+void CC_init(CC* cc, Graph* graph){
+  int no_of_vertex = Graph_no_of_vertex(graph);
+  cc->marked = (bool* )Malloc(sizeof(bool) * no_of_vertex);
+  for (int i = 0; i < no_of_vertex; i++){
+    cc->marked[i] = false;
+  }
+  cc->id = (int* )Malloc(sizeof(int) * no_of_vertex);
+  for (int i = 0; i < no_of_vertex; i++){
+    cc->id[i] = -1;
+  }
+  cc->count = 0;
+  cc->graph = graph;
+}
+
+void _CC_depth_first_search(CC* cc, int s){
+  cc->marked[s] = true;
+  cc->id[s] = cc->count;
+  for (Node* n = Bag_iterator_begin(&cc->graph->adj[s]); n != Bag_iterator_end(); n = Bag_iterator_next(n)){
+    if (!cc->marked[n->data]){
+      _CC_depth_first_search(cc, n->data);
+    }
+  }
+}   
+void CC_create_id(CC* cc){
+  for (int i = 0; i < Graph_no_of_vertex(cc->graph); i++){
+    if (!cc->marked[i]){
+      _CC_depth_first_search(cc, i);
+      cc->count += 1;
+    }
+  }
+}
+
+int CC_no_of_connected_component(CC* cc){
+  return cc->count;
+}
+
+bool CC_is_connected(CC* cc, int v, int w){
+  return (cc->id[v] == cc->id[w]);
+}
+
+void CC_show_components(CC* cc){
+  Bag component[cc->count];
+  for (int i = 0; i < cc->count; i++){
+    Bag_init(&component[i]);
+  }
+  for (int i = 0; i < Graph_no_of_vertex(cc->graph); i++){
+    Bag_add(&component[cc->id[i]], i);
+  }
+  printf("CC: showing Bag of connected components\n");
+  for (int i = 0; i < cc->count; i++){
+    Bag_show(&component[i]);
+  }
+  for (int i = 0; i < cc->count; i++){
+    Bag_destroy(&component[i]);
+  }
+}
+
+void CC_destroy(CC* cc){
+  Free(cc->marked);
+  Free(cc->id);
+  cc->count = 0;
+  cc->graph = NULL;
+}
